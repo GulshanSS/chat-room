@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+.chatRoom__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 50px 100px;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 1.5rem;
+}
+
+.chatRoom__form span {
+  font-size: 40px;
+  color: #c3ff99;
+  text-transform: uppercase;
+}
+
+.chatRoom__form input {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #000;
+  border: 2px solid #c3ff99;
+  color: #fff;
+}
+
+.chatRoom__form input:focus {
+  outline: #c3ff99;
+}
+
+.chatRoom__form button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #c3ff99;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chatRoom__box {
+  background-color: rgba(255, 255, 255, 0.075);
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid #c3ff99;
+}
+
+.chatRoom__box .header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 15px;
+  color: #c3ff99;
+}
+
+.chatRoom__box .message__box {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 5px 10px;
+  overflow: auto;
+  border: 2px solid #c3ff99;
+}
+
+.chatRoom__box .message__box .message-content {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c3ff99;
+}
+
+.message {
+  max-width: 250px;
+  padding: 5px;
+  font-size: 16px;
+  color: #000;
+  background-color: #c3ff99;
+  border-radius: 5px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: bold;
+  color: #c3ff99;
+}
+
+#right {
+  align-items: flex-end;
+}
+
+#left {
+  align-items: flex-start;
+}
+
+.chatRoom__box .footer {
+  padding: 10px 5px;
+}
+
+.chatRoom__box .footer input {
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.chatRoom__box .footer input:focus {
+  outline: none;
+}
+
+.chatRoom__box .footer button {
+  margin-left: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #c3ff99;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
