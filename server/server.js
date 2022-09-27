@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 
 require("dotenv").config();
 
-app.use(cors());
+app.use(cors({ origin: process.env.UI_URL }));
 
 const server = http.createServer(app);
 
